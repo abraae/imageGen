@@ -1,0 +1,15 @@
+{
+  "name": "imageGen",
+  "version": "1.0.0",
+  "description": "Sample image generator for Aotal assessment app images",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "canvas": "^1.6.6"
+  },
+  "author": "Andrew Braae <abraae@aotal.com>"
+}
