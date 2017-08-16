@@ -16,7 +16,7 @@ function draw(req) {
   var label = req.query.label != null ? req.query.label  : '??';
   
   var iconBlockWidth = 30;
-  var fontSize = 20;
+  var fontSize = 24;
   
   // draw the green and red bars, to the right of the icon block, with green == score
   var width = canvas.width - iconBlockWidth;
