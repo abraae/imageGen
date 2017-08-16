@@ -1,7 +1,7 @@
 function draw(req) {
   var Canvas = require('canvas'),
 	  Image = Canvas.Image,
-	  canvas = new Canvas(104, 64), // Aotal assessment image is half this size, we're high res. for retina display
+	  canvas = new Canvas(104, 64), // Aotal assessment image is downscaled to half this size, we render at high res. for retina display
 	  ctx = canvas.getContext('2d');
 
 //  var canvas = document.getElementById('canvas');

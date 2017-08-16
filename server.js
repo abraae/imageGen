@@ -1,9 +1,10 @@
-const express = require('express')
+const express = require('express');
 var scoreWithIcon = require('./scoreWithIcon.js');
-const app = express()
+const app = express();
+const port = 8081;
 
 app.get('/', function (req, res) {
-  res.send('This is the image generator for Aotal assessment images')
+  res.send('This is the image generator for Aotal assessment images');
 })
 
 app.get('/scoreWithIcon.png', function (req, res, next) {
@@ -11,7 +12,7 @@ app.get('/scoreWithIcon.png', function (req, res, next) {
   scoreWithIcon(req).pngStream().pipe(res);
 });
 
-app.listen(3000, function () {
-  console.log('Aotal assessment image generator app up and listening on port 3000')
+app.listen(port, function () {
+  console.log('Aotal assessment image generator app up and listening on ' + port);
 })
 
