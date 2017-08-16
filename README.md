@@ -10,7 +10,7 @@ docker run -d -p 8081:8081 imagegen
 
 Images will now be served at (e.g. for a score of 77):
 
-**http://<your server>:8081/scoreWithIcon.png?score=77&label=A1**
+**http://yourserver.com:8081/scoreWithIcon.png?score=77&label=A1**
 
 Areas for improvement:
 - more image types
