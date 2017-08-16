@@ -5,7 +5,7 @@ To run on server:
 git clone https://github.com/talentappstore/imageGen.git
 cd imageGen
 docker build -t imagegen .
-docker run -d -p 8081:8081 imagegen
+docker run -d -p 8081:8081 --restart unless-stopped imagegen
 ````
 
 Images will now be served at (e.g. for a score of 77):
